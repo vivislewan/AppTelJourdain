@@ -1,0 +1,10 @@
+<ion-view view-title="Get Pictures">
+  <ion-content> 
+  
+ <button ion-button ng-click="getPictures()">Get Pictures</button>
+ <div *ngFor="let image of images">
+ <img src="{{image}}"/>
+ </div>
+</ion-content>
+
+</ion-view>

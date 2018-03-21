@@ -1,0 +1,12 @@
+<ion-view view-title="Camera">
+    <ion-content>
+        <h1>Camera</h1>
+        <button ng-click="Camerapicture()" class="button button-dark">Default</button>
+        <button ion-button ng-click="getPictures()" class="button button-dark">Get Pictures</button>
+        <div *ngFor="let image of images">
+            <img src="{{image}}" />
+        </div>
+    </ion-content>
+    
+  
+</ion-view>
