@@ -19,16 +19,12 @@ angular.module('camerapage', [])
            function onSuccess(imageURI) {
                var image = document.getElementById('myImage');
                image.src = imageURI;
-               
            }
 
            function onFail(message) {
                alert('Failed because: ' + message);
            }
-this.camera.getPicture(this.cameraOptions).then((imageData) => {
-                 let image = 'data:image/jpeg;base64,' + imageData;
-                 return image;
-             });
+
            }
         
         $scope.getPictures = function () {
